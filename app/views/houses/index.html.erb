@@ -1,0 +1,10 @@
+<h1>The Houses:</h1>
+
+<ul>
+<% @houses.each do |house| %>
+  <li><%= link_to house.name, house %></li>
+<% end %>
+</ul>
+
+
+<%= link_to 'Add New House', new_house_path %>
